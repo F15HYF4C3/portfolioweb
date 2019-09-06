@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const massive = require("massive");
-const session = require("express-session");
+// const session = require("express-session");
 require("dotenv").config();
 const path = require("path");
 
@@ -18,16 +18,6 @@ massive(DATABASE_URL)
 		console.log(`You have been defeated by ${err}.`);
 	});
 app.use(express.static(path.join(__dirname, "/build")));
-// app.get('/api/guest', (req, res, next)=>{
-//     const db = req.app.get('db');
-//     db.GUEST_TABLE({id:req.query.id})
-//     .then((guest)=>{
-//         console.log(guest)
-//         res.send(guest)
-
-//     })
-//     // .catch
-// })
 
 app.use(cors());
 app.use(bodyParser.json());
