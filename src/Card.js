@@ -8,7 +8,7 @@ import CardContent from "@material-ui/core/CardContent";
 import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
-// import IMG from './MZ.png';
+// import "TPallette1.PNG" from "./";
 const styles = {
 	card: {
 		maxWidth: 345
@@ -25,16 +25,15 @@ function MediaCard(props) {
 			<CardActionArea>
 				<CardMedia
 					className={classes.media}
-					// image={IMG}
+					// image={TPallette1}
 					title="Contemplative Reptile"
 				/>
 				<CardContent>
 					<Typography gutterBottom variant="h5" component="h2">
-						Zukerberg
+						Tyra Muhlestein
 					</Typography>
 					<Typography component="p">
-						Lizards are a widespread group of squamate reptiles, with over 6,000
-						species, ranging across all continents except Antarctica
+						I am a hard working individual who does not quit.
 					</Typography>
 				</CardContent>
 			</CardActionArea>

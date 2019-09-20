@@ -2,7 +2,7 @@ const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
 const massive = require("massive");
-// const session = require("express-session");
+const session = require("express-session");
 require("dotenv").config();
 const path = require("path");
 
